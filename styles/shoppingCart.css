@@ -1,0 +1,121 @@
+/*购物车主体*/
+
+/*商品列表标题*/
+#shoppingCart #cartContent #carContTitle{
+    height: 60px;
+    background-color: #F2F2F2;
+    line-height: 60px;
+}
+
+#shoppingCart #cartContent .checkAll{
+    width: 18px;
+    height: 18px;
+}
+
+#shoppingCart #cartContent li{
+    font-size: 16px;
+    float: left;
+}
+
+#shoppingCart #cartContent .check{
+    width: 80px;
+}
+
+#shoppingCart #cartContent .product{
+    width: 490px;
+}
+
+#shoppingCart #cartContent .price{
+    width: 190px;
+}
+
+#shoppingCart #cartContent .quantity{
+    width: 125px;
+}
+
+#shoppingCart #cartContent .quantity .error{
+    display: none;
+}
+
+#shoppingCart #cartContent .totalRow{
+    width: 185px;
+}
+
+#shoppingCart #cartContent .operation{
+    width: 130px;
+}
+
+#shoppingCart #cartContent .carConDetail{
+    height: 190px;
+    padding: 20px 0px;
+    border-bottom: solid 2px #E6E6E6;
+}
+
+#shoppingCart #cartContent .carConDetail img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #E6E6E6;
+}
+
+.add,.sub,.num{
+    float: left;
+    width: 24px;
+    height: 24px;
+    border: solid 1px #ccc;
+    line-height: 10px;
+    text-align: center;
+}
+
+.num{
+    width: 76px;
+    height: 24px;
+    border-right: none;
+    border-left: none;
+}
+
+/*结算*/
+#shoppingCart #statistics{
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+}
+
+#shoppingCart #statistics li{
+    padding-left: 25px;
+}
+
+#shoppingCart #statistics .width636{
+    width: 681px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#shoppingCart #statistics .width150{
+    width: 150px;
+    text-align: left;
+}
+
+#shoppingCart #statistics li .submitBtn{
+    width: 130px;
+    height: 59px;
+    background-color: #FF6700;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+}
+
+/*.checkboxDiv{
+    width: 20px;
+    height: 20px;
+    border: solid 1px #5a5a5a;
+    background-color: #fff;
+}*/
+
+#address{
+    width: 250px;
+    height: 30px;
+    margin-right: 60px;
+    line-height: 30px;
+}

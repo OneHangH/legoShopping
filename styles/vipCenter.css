@@ -1,0 +1,222 @@
+/*会员中心头部*/
+header #vipCenterTitle{
+    width: 930px;
+    height: 70px;
+}
+
+header #vipCenterTitle ul{
+    padding-right: 100px;
+}
+
+header #vipCenterTitle li{
+    float: left;
+    padding: 5px 20px;
+    margin: 17px 50px 0px 0px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+header #vipCenterTitle .current,header #vipCenterTitle li:hover{
+    background-color: #FF6700;
+    color: #fff;
+}
+
+/*轮播和会员信息*/
+#bannerAndUserInfo{
+    height: 485px;
+    padding-top: 15px;
+    background: url(../images/vipCenterBg.png);
+}
+
+/*会员特权*/
+#bannerAndUserInfo #bannerAndUserInfoCont #vipPrivilege{
+    width: 230px;
+    height: 470px;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont .privilegeCont{
+    height: 80px;
+    padding-top: 36px;
+    margin-top: 20px;
+    background-color: #FF6700;
+    font-size: 12px;
+    color: #4D4D4D;
+    text-indent: 10px;
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont .bg1{
+    background-image: url(../images/privilegeCont1.jpg);
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont .bg2{
+    background-image: url(../images/privilegeCont2.jpg);
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont .bg3{
+    background-image: url(../images/privilegeCont3.jpg);
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont #vipPrivilege #privilegeTitle{
+    width: 228px;
+    height: 36px;
+    margin: 10px auto 0px auto;
+    background-color: #FF6700;
+    color: #fff;
+    line-height: 36px;
+}
+
+
+/*轮播*/
+#bannerAndUserInfo #bannerAndUserInfoCont #vipBanner{
+    width: 730px;
+    height: 470px;
+}
+
+
+/*会员信息*/
+#bannerAndUserInfo #bannerAndUserInfoCont #userInfo{
+    width: 210px;
+    height: 470px;
+    background-color: #FAFAFA;
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont #userInfo .box120{
+    height: 120px;
+    margin-left: 20px;
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont #userInfo .box120 .headerIcon{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    background-position: -200px -350px;
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont #userInfo .box120 p{
+    height: 20px;
+   line-height: 20px;
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont #userInfo .box120 .icon1,#bannerAndUserInfo #bannerAndUserInfoCont #userInfo .box120 .icon2{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    background-position: -250px -350px;
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont #userInfo .box120 .icon2{
+    background-position: -300px -350px;
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont #userInfo .box95{
+    height: 95px;
+    line-height: 95px;
+    position: relative;
+    color: #4D4D4D;
+}
+
+#bannerAndUserInfo #bannerAndUserInfoCont #userInfo .box95 p{
+    width: 120px;
+    height: 28px;
+    background-position: -200px -450px;
+    position: absolute;
+    left: -2px;
+    top: 0px;
+    line-height: 28px;
+    text-indent: -10px;
+}
+
+
+/*y优惠列表*/
+#privilegeList{
+    height: 165px;
+    padding-top: 25px;
+    background-color: #F5F5F5;
+}
+
+#privilegeList .box290{
+    width: 280px;
+    height: 140px;
+    margin: 0px 5px;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.vipProductList{
+    height: 630px;
+    padding-top: 20px;
+}
+
+.vipProductList .vipBox210{
+    width: 214px;
+    height: 290px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.vipProductList .vipBox210 .addToCart{
+    width: 210px;
+    height: 50px;
+    background-color: #FF6700;
+    color: #fff;
+    line-height: 50px;
+    position: absolute;
+    z-index: 2000;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    display: none;
+}
+
+.vipProductList .vipBox210 .addToCart span{
+    width: 35px;
+    height: 25px;
+    display: inline-block;
+    background-position: -300px -8px;
+}
+
+.vipProductList .vipBox210 .boxTop{
+    height: 177px;
+    width: 206px;
+    border: 2px solid #E6E6E6;
+    border-bottom: none;
+}
+
+.vipProductList .vipBox210 .boxTop .tag{
+    height: 28px;
+    width: 75px;
+    line-height: 28px;
+    color: #fff;
+    background-position: -202px -300px;
+    position: absolute;
+    left: 0px;
+    top: 168px;
+}
+
+.vipProductList .vipBox210 .boxBottom{
+    height: 92px;
+    width: 210px;
+    padding-top: 20px;
+    background-image: url(../images/vipBoxBottom.png);
+}
+
+.vipProductList .vipBox210 .boxBottom .btn{
+    width: 140px;
+    height: 28px;
+    margin: auto;
+    background-color: #FF6700;
+    line-height: 28px;
+    color: #fff;
+    border-bottom: 2px solid #E53403;
+    cursor: pointer;
+}
+
+#privilege .privilegeCont{
+    width: 362px;
+    margin: 40px 19px;
+ }

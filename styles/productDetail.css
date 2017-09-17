@@ -1,0 +1,386 @@
+/*商品简介*/
+#productIntro{
+    height: 600px;
+    background-color: #F2F2F2;
+    color: #6c6c6c;
+}
+
+/*网页位置*/
+#productIntro #webpageLocation{
+    height: 40px;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+#productIntro #webpageLocation li{
+    float: left;
+    margin: 0px 5px;
+    padding-top: 2px;
+}
+
+#productIntro #webpageLocation .title{
+    padding-top: 0px;
+}
+/*产品简介详情*/
+#productIntro #introDetail{
+    height: 470px;
+    padding: 15px 0px;
+    background-color: #fff;
+}
+
+/*简介图片*/
+#productIntro #introDetail #introImg{
+    width: 345px;
+    height: 470px;
+    margin-left: 25px;
+}
+
+/*简介文字*/
+#productIntro #introDetail #introText{
+    width: 790px;
+    margin-right: 25px;
+    height: 470px;
+}
+
+/*价格和优惠区域*/
+#productIntro #introDetail #introText #productPrice{
+    height: 120px;
+    padding: 10px;
+    background-color: #F2F2F2;
+}
+
+#productIntro #introDetail #introText #productPrice #price{
+    font-size: 16px;
+}
+
+#productIntro #introDetail #introText #productPrice #price .ticket{
+    display: inline-block;
+    width: 90px;
+    height: 28px;
+    margin-left: 12px;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    background-position: -400px -500px;
+    cursor: pointer;
+}
+
+#productIntro #introDetail #introText #chooseType .type{
+    width: 100px;
+    height: 34px;
+    display: inline-block;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #C9C9C9;
+    cursor: pointer;
+    background-position: -300px -150px;
+}
+
+#productIntro #introDetail #introText #chooseType .current{
+    width: 98px;
+    height: 32px;
+    background-position: -266px -480px;
+    border: 2px solid #FF6700;
+}
+
+/*累计评价*/
+#productIntro #introDetail #introText #productPrice #commendNum{
+    width: 70px;
+    height: 40px;
+    border-left: 2px solid #D9D9D9;
+    text-align: center;
+    color: #939393;
+}
+
+/*加入购物车*/
+#productIntro #introDetail #introText #addToCart{
+    height: 85px;
+}
+
+#productIntro #introDetail #introText #addToCart #changeNum{
+    width: 61px;
+    height: 40px;
+    border: 1px solid #D9D9D9;
+    margin: 10px 0px 0px 10px;
+}
+
+#productIntro #introDetail #introText #addToCart #changeNum .num{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-right: 1px solid #D9D9D9;
+    color: #939393;
+}
+
+#productIntro #introDetail #introText #addToCart #changeNum .add,#productIntro #introDetail #introText #addToCart #changeNum .sub{
+    width: 20px;
+    height: 20px;
+    border: none;
+    line-height: 20px;
+    color: #939393;
+    background-color: #E6E6E6;
+}
+
+#productIntro #introDetail #introText #addToCart #changeNum .sub{
+    border-top: 1px solid #D9D9D9;
+}
+
+#productIntro #introDetail #introText #addToCart #submit{
+    width: 190px;
+    height: 60px;
+    margin-left: 25px;
+    background-color: #FF6700;
+
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    line-height: 60px;
+    color: #fff;
+}
+
+#productIntro #introDetail #introText #addToCart .error{
+    display: none;
+}
+
+/*商品详情*/
+#productDetails #others{
+    width: 318px;
+    border: solid 1px #E6E6E6;
+}
+
+#productDetails #others #othersTitle{
+    height: 40px;
+    background-color: #F4F4F4;
+    line-height: 40px;
+}
+
+#productDetails #others #othersList{
+    height: 2150px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#productDetails #others #othersList li{
+    width: 210px;
+    height: 280px;
+    padding: 10px 45px;
+    border-bottom: solid 1px #E6E6E6;
+}
+
+/*商品介绍和评论*/
+#productDetails #detailAndCommend{
+    width: 860px;
+}
+
+#productDetails #detailAndCommend #detailAndCommendTitle{
+    height: 48px;
+    line-height: 48px;
+}
+
+#productDetails #detailAndCommend #detailAndCommendTitle li{
+    float: left;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+#productDetails #detailAndCommend #detailAndCommendTitle .current{
+    background-color: #FF6700;
+    color: #fff;
+}
+
+/*商品介绍*/
+#productDetails #detailAndCommend #productDetailIntro{
+    width: 750px;
+    margin: 10px auto 0px auto;
+}
+#productDetails #detailAndCommend #productDetailIntro p{
+    line-height: 38px;
+}
+
+/*评论*/
+#commend{
+    display: none;
+}
+
+#commend #dataStatistics{
+    height: 80px;
+    padding: 45px 35px;
+    color: #6c6c6c;
+}
+
+#commend #dataStatistics>li{
+    float: left;
+}
+
+#commend #dataStatistics #goodReputation{
+    width: 110px;
+    text-align: right;
+}
+
+#commend #dataStatistics #goodReputation .bigFont{
+    font-size: 52px;
+    line-height: 52px;
+}
+
+#commend #dataStatistics #reputation{
+    width: 290px;
+}
+
+#commend #dataStatistics #reputation ul{
+    float: right;
+    color: #B6B6B6;
+}
+
+#commend #dataStatistics #reputation ul li{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#commend #dataStatistics #reputation ul .percentage{
+    width: 150px;
+    height: 18px;
+    margin-top: 6px;
+    float: right;
+    background-color: #E6E6E6;
+}
+
+#commend #dataStatistics #reputation ul .percentage .plan{
+    height: 18px;
+    width: 0px;
+    background-color: #F8380C;
+}
+
+#commend #dataStatistics #reputationRank{
+    width: 390px;
+}
+
+#commend #dataStatistics #reputationRank ul{
+    float: right;
+}
+
+#commend #dataStatistics #reputationRank ul li{
+    float: right;
+    width: 150px;
+    padding-left: 30px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#commend #dataStatistics #reputationRank ul li span{
+    margin-left: 50px;
+}
+
+/*评价分类*/
+#commend #reputationType{
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background-color: #F5F5F5;
+}
+
+#commend #reputationType li{
+    float: left;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+#commend #reputationType li:hover{
+    color: #FF6700;
+}
+
+/*评价内容*/
+#commend .reputationCont{
+    display: none;
+}
+
+#commend .reputationCont li{
+    height: 130px;
+    padding-top: 15px;
+    font-size: 14px;
+    border-bottom: 2px solid #F5F5F5;
+}
+
+#commend .reputationCont li p{
+    margin-top: 5px;
+}
+
+#commend .reputationCont li .level{
+    width: 160px;
+    height: 130px;
+    color: #B6B6B6;
+}
+
+#commend .reputationCont li .level .star{
+    width: 116px;
+    height: 19px;
+    margin-left: 22px;
+    background: url(../images/star_small.gif) no-repeat;
+    background-position: 0px -40px;
+}
+
+#commend .reputationCont li .reputationText{
+    width: 470px;
+    height: 130px;
+    padding: 0px 15px;
+    text-align: left;
+}
+
+#commend .reputationCont li .userInfo{
+    width: 200px;
+    height: 130px;
+}
+
+#commend .reputationCont li .userInfo .userName{
+    height: 30px;
+    line-height: 30px;
+}
+
+#commend .reputationCont li .userInfo .head{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    float: left;
+    margin-left: 62px;
+    background-position: -200px -150px;
+}
+
+/*页码*/
+#page{
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #9A9A9A;
+}
+
+#page li{
+    float: left;
+    margin-left: 10px;
+}
+
+#page .prePage,#page .nextPage,#page .pageNum{
+    height: 30px;
+    width: 10px;
+    padding: 0px 10px;
+    border: 1px solid #E6E6E6;
+    background-color: #FAFAFA;
+    cursor: pointer;
+}
+
+#page .prePage,#page .nextPage{
+    width: 50px;
+    padding: 0px 5px;
+}
+
+#page .prePage,#page .prePageIndex{
+    display: none;
+}
+
+#page .current{
+    border: none;
+    color: #FF6700;
+    background-color: #fff;
+}

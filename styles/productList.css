@@ -1,0 +1,154 @@
+/*热卖畅销*/
+#bannerHot #hot{
+    height: 430px;
+    width: 200px;
+}
+
+#bannerHot #hot #hotTitle{
+    height: 30px;
+    background-color: #93D56F;
+    color: #fff;
+    line-height: 30px;
+}
+
+#bannerHot #hot #hotContent .hotDetail{
+    height: 42px;
+    overflow: hidden;
+    border-bottom: solid 1px #B3B3B3;
+}
+
+#bannerHot #hot #hotContent .current{
+    height: 141px;
+}
+
+#bannerHot #hot #hotContent .hotDetail img{
+    width: 100px;
+    height: 100px;
+}
+
+#bannerHot #hot #hotContent .hotDetail .hotNum{
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+#bannerHot #hot #hotContent .hotDetail .hotNum span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: right;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+}
+
+/*新书上架*/
+#newBooks #newBookList{
+    width: 904px;
+}
+
+#newBooks #newBookList #newBookDetail .box160 img{
+    width: 150px;
+    height: 150px;
+}
+
+#newBooks #newBookList #newBookDetail{
+    border: solid 2px #ccc;
+    border-top: none;
+}
+
+#newBooks #newBookList #newBookDetail .box180{
+    width: 160px;
+    height: 240px;
+    padding: 10px 10px 0px 10px;
+}
+
+/*新书排行榜*/
+#newBooks #bookRank{
+    width: 276px;
+    height: 500px;
+    margin-top: 40px;
+    border: solid 2px #ccc;
+    overflow: hidden;
+}
+
+#newBooks #bookRank ul{
+    margin-top: 10px;
+}
+
+#newBooks #bookRank li:after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    clear: both;
+}
+
+#newBooks #bookRank li p{
+    float: left;
+}
+
+#newBooks #bookRank li .rankNum{
+    width: 15px;
+    height: 40px;
+    margin-left: 10px;
+    line-height: 40px;
+}
+
+#newBooks #bookRank li .bookImg,#newBooks #bookRank li .bookText{
+    width: 251px;
+    border-bottom: 2px solid #E6E6E6;
+}
+
+#newBooks #bookRank li .bookImg{
+    height: 168px;
+    line-height: 20px;
+    display: none;
+}
+
+#newBooks #bookRank li .bookImg img{
+    float: left;
+    margin-right: 5px;
+}
+
+#newBooks #bookRank li .bookText{
+    height: 40px;
+    line-height: 40px;
+    text-indent: 5px;
+}
+
+.box200{
+    width: 160px;
+    height: 240px;
+    padding: 10px 20px 0px 20px;
+}
+
+/*独家提供*/
+#exclusive #exclusiveContent .exclusiveContentDetail{
+    display: none;
+}
+
+/*猜你喜欢*/
+#guessULike #guessULikeTitle .change{
+    width: 100px;
+    text-align: right;
+    color: #468DFC;
+    background-position: -200px -488px;
+    cursor: pointer;
+}
+
+#guessULike #guessULikeList .guessULikeContent{
+    display: none;
+}
+
+/*精选*/
+#choiceness .choicenessDetail{
+    height: 95px;
+    width: 195px;
+    float: left;
+    padding: 5px 0px 0px 5px;
+}
+
+#choiceness .choicenessDetail img{
+    height: 90px;
+    width: 90px;
+}

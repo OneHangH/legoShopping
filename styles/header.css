@@ -1,0 +1,160 @@
+/*顶部登陆条*/
+header #loginBar{
+	height: 28px;
+	background-color: #101010;
+	color: #bfbfbf;
+	font-family: "黑体";
+	text-align: right;
+	line-height: 28px;
+}
+
+header #loginBar a{
+	color: #bfbfbf;
+	font-size: 14px;
+}
+
+header #loginBar a:hover{
+	text-decoration: none;
+	color: #ff6600;
+}
+
+/*logo、搜索跟购物车*/
+header #logoCartSearch,header #logoCartSearch2{
+	height: 42px;
+	margin-top: 5px;
+	position: relative;
+}
+
+header #logoCartSearch2{
+	height: 70px;
+}
+
+/*logo*/
+header #logoCartSearch #logo{
+	width: 200px;
+	height: 70px;
+	background-image: url(../images/LogoBG.gif);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+header #logoCartSearch2 #logo2{
+	width: 235px;
+	height: 105px;
+	padding-right: 25px;
+	background-color: #FF6700;
+	background-position: -375px 10px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	color: #fff;
+	text-align: right;
+	line-height: 105px;
+}
+
+header #logoCartSearch2 #logo2 a{
+	width: 235px;
+	height: 105px;
+	display: block;
+	position: absolute;
+	top: 0px;
+}
+
+
+header #logoCartSearch #logo #logoTitle{
+	display: block;
+	width: 200px;
+	height: 75px;
+}	
+
+header #logoCartSearch #logo #logoTitle span{
+	font-size: 24px;
+	color: #fff;
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+
+/*搜索*/
+#search #searchText{
+	width: 390px;
+	height: 32px;
+	text-indent: 10px;
+	border: solid 2px #FF6700;
+	outline: none;
+}
+
+#search #searchSubmit,#search #searchSubmit2{
+	width: 50px;
+	height: 36px;
+	margin-right: 35px;
+	background-color: #FF6600;
+	background-position: -190px -5px;
+	border: none;
+	cursor: pointer;
+}
+
+#search #searchSubmit2{
+	height: 32px;
+}
+
+/*购物车*/
+header #logoCartSearch #shopppingCart li{
+	width: 98px;
+	height: 34px;
+	float: left;
+	background-color: #EBEBEB;
+	border: solid 1px #CCCCCC;	
+	text-align: center;
+	line-height: 34px;
+	color: #9E9E9E;
+	cursor: pointer;
+}
+
+header #logoCartSearch #shopppingCart .cart{
+	text-indent: 25px;
+	background-position: -300px -6px;
+}
+
+header #logoCartSearch #shopppingCart .current{
+	background-color: #FF6700;
+	color: #fff;
+	border: solid 1px #FF6700;
+}
+
+/*全部商品分类+主导航*/
+header #classNav #class{
+	height: 30px;
+	width: 200px;
+	background-position: -297px -87px;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-family: "黑体";
+}
+
+header #classNav .orange{
+	background-color: #FF6700;
+}
+
+header #classNav .green{
+	background-color: #93D56F;
+}
+
+header #classNav #class p{
+	margin-right: 20px;
+}
+
+header #classNav #mainNav{
+	height: 30px;
+	line-height: 30px;
+}
+
+header #classNav #mainNav li{
+	float: left;
+	margin-left: 32px;
+}
+
+

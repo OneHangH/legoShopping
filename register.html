@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册-乐购商城</title>
+    <meta name="Description" content=""/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/lego.ico"/>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/public.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/register.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <script src="scripts/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/register.js" type="text/javascript" charset="utf-8"></script>
+    <!--[if lte IE 6]>
+    <script src="scripts/html5shiv.js" type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部开始-->
+    <header>
+        <!--登录注册-->
+        <div id="loginBar">
+            <div class="box1200">欢迎光临<span class="colorOrange">乐购</span>,请&nbsp;<a href="login.html">登录</a>\<a href="register.html">注册</a></div>
+        </div>
+        <!--logo+搜索-->
+        <div class="box1200" id="logoCartSearch2">
+            <!--logo-->
+            <div class="fl icon" id="logo2">
+                <a href="index.html"></a>
+                <p class="paddingRight20 font28">注册</p>
+            </div>
+            <div class="fl" id="loginTitle">
+                <div class="fl font28">欢迎登录</div>
+                <div class="fr font22 colorDeepGray paddingTop7 marginRight32">已有帐号，请&nbsp;<a href="login.html">登录</a></div>
+            </div>
+        </div>
+    </header>
+    <!--头部结束-->
+    <!--注册主体开始-->
+    <div class="box1200 marginTop40 borderBottom">
+        <form action="" id="registerForm">
+            <p><input type="text" name="userName" id="userName" placeholder="您的账户名和登录名"></p>
+            <input type="password" name="psw" id="psw" placeholder="建议设置两种字符密码">
+            <input type="password" name="pswAgain" id="pswAgain" placeholder="再次输入密码">
+            <input type="text" name="phone" id="phone" placeholder="建议使用常用手机号">
+           <p class="pFather">
+               <input type="text" name="verify" id="verify" placeholder="请输入验证码">
+               <span class="verify" id="getVerify">4E7R</span>
+           </p>
+            <p class="pFather">
+                <input type="text" name="phoneVerify" id="phoneVerify" placeholder="请输入手机验证码">
+                <span class="verify" id="msgVerify">获取验证码</span>
+            </p>
+            <p><input type="checkbox">我已阅读并同意<a class="colorOrange" href="#">《乐购用户注册协议》</a></p>
+            <input class="marginTop35" type="submit" id="submit" value="立即注册">
+            <ul id="inputTitle">
+                <li>用户名</li>
+                <li>设置密码</li>
+                <li>确认密码</li>
+                <li>中国+86</li>
+                <li>验证码</li>
+                <li>手机验证码</li>
+            </ul>
+            <ul id="error">
+                <li>用户名必须在6-12位之间</li>
+                <li>密码必须在6-12位之间</li>
+                <li>两次密码不一致</li>
+                <li>请输入正确的手机号码格式</li>
+                <li>验证码错误</li>
+            </ul>
+        </form>
+    </div>
+    <!--注册主体结束-->
+    <!--脚部开始-->
+    <footer>
+        <div class="box1200 marginTop35" id="footerContent">
+            <div class="marginTop35" id="copyright">
+                <ul>
+                    <li>&emsp;<a href="#">公司简介</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">Investor Relations</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">网站联盟</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">乐购招商</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">机构销售</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">手机乐购</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">官方logo</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">热词搜索</a>&emsp;</li>
+                </ul>
+                <div class="clear"></div>
+                <p class="center font12 colorGray marginTop17">Copyright (C) 乐购网 2014-2016, All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!--脚部结束-->
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>收银台</title>
+    <meta name="keywords" content=""/>
+    <meta name="Description" content=""/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/lego.ico"/>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/public.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/counter.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <script src="scripts/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/counter.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/footer.js" type="text/javascript" charset="utf-8"></script>
+    <!--[if lte IE 6]>
+    <script src="scripts/html5shiv.js" type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部开始-->
+    <header>
+        <!--登录注册-->
+        <div id="loginBar">
+            <div class="box1200">欢迎光临<span class="colorOrange">乐购</span>,请&nbsp;<a href="login.html">登录</a>\<a href="register.html">注册</a></div>
+        </div>
+        <div class="box1200" id="logoCartSearch2">
+            <!--logo-->
+            <div class="fl icon" id="logo2">
+                <a href="index.html"></a>
+                <p class="font28">收银台</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <!--头部结束-->
+    <!--订单确认信息开始-->
+    <div class="box1200 marginTop20" id="orderSureInfo">
+        <div class="font18 textIndex" id="infoTitle">
+            订单提交成功，请尽快付款！订单编号：91000234567 <a class="fr colorBlue" href="submitOrder.html">订单详情</a>
+        </div>
+        <div class="font18 textIndex marginTop5" id="infoCont">
+            请您在24订单提交 <span class="colorOrange">24</span>小时内付款，否则将会取消订单 <span class="fr font22">应付金额：<span class="colorOrange">47.00</span></span>
+        </div>
+    </div>
+    <!--订单确认信息结束-->
+    <div class="clear"></div>
+    <!--乐购支付开始-->
+    <div class="box1200 marginTop8" id="legoPay">
+        <div class="font18 colorDeepGray legoPayTitle">
+            <span>乐购支付</span>以下方式由乐购支付提供
+        </div>
+        <div class="font18 marginTop8 legoPayCont">
+            <div class="fl card center">银行卡</div>
+            <div class="fl blank marginRight32"><span class="marginRight32">中国招商银行</span><span class="colorOrange">网银</span><span class="fr colorDeepGray">最近使用</span></div>
+            <div class="fl addBlank center">添加银行卡 +</div>
+            <div class="fr font22 payMoney">支付金额：<span class="colorOrange">47:00</span></div>
+        </div>
+        <div class="clear"></div>
+        <div class="marginTop17 center font24"><input class="fr" id="payBtn" type="button" value="立即支付"></div>
+    </div>
+    <!--乐购支付结束-->
+    <div class="clear"></div>
+    <!--其他支付方式开始-->
+    <div class="box1200 marginTop40" id="othersPay">
+        <div class="font18 colorDeepGray legoPayTitle">
+            <span>其他支付</span>以下方式不支持合并支付
+        </div>
+        <div class="legoPayCont marginTop8">
+            <ul>
+                <li><a href="#">微信支付&emsp;|&emsp;</a></li>
+                <li><a href="#">中国移动支付&emsp;|&emsp;</a></li>
+                <li><a href="#">中国银联&emsp;|&emsp;</a></li>
+                <li><a href="#">外籍内卡&emsp;|&emsp;</a></li>
+                <li><a href="#">拉卡拉&emsp;|&emsp;</a></li>
+                <li><a href="#">预约支付卡&emsp;|&emsp;</a></li>
+                <li><a href="#">乐购钱包扫一扫</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--其他支付方式结束-->
+    <!--广告开始-->
+    <div class="box1200 advertisement marginTop40">
+        <img src="images/advertisement.png" alt="广告">
+    </div>
+    <!--广告结束-->
+    <!--脚部开始-->
+    <footer>
+        <div class="center" id="serverList">
+            <img src="images/222_11.png" alt="正规渠道">
+            <img src="images/222_13.png" alt="放心购物">
+            <img src="images/222_15.png" alt="次日到达">
+            <img src="images/222_17.png" alt="上门退货">
+        </div>
+        <div class="box1200 marginTop35" id="footerContent">
+            <div id="serverMenu">
+                <ul>
+                    <li><p class="font16">购物指南</p></li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">发票制度</a></li>
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">会员优惠</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">支付方式</p></li>
+                    <li><a href="#">货到付款</a></li>
+                    <li><a href="#">网上支付</a></li>
+                    <li><a href="#">礼品卡支付</a></li>
+                    <li><a href="#">银行转账</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">订单服务</p></li>
+                    <li><a href="#">订单配送查询</a></li>
+                    <li><a href="#">订单状态说明</a></li>
+                    <li><a href="#">自动取消订单</a></li>
+                    <li><a href="#">自助修改订单</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">退换货</p></li>
+                    <li><a href="#">退换货政策</a></li>
+                    <li><a href="#">自助申请退换货</a></li>
+                    <li><a href="#">退换货进度查询</a></li>
+                    <li><a href="#">退款方式和时间</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">上架服务</p></li>
+                    <li><a href="#">商家中心</a></li>
+                    <li><a href="#">运营服务</a></li>
+                    <li><a href="#">加入尾品会</a></li>
+                </ul>
+            </div>
+            <div class="fr" id="footerLogo">
+                <img src="images/logo_00.png" alt="">
+            </div>
+            <div class="clear"></div>
+            <div class="marginTop35" id="copyright">
+                <ul>
+                    <li>&emsp;<a href="#">公司简介</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">Investor Relations</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">网站联盟</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">乐购招商</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">机构销售</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">手机乐购</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">官方logo</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">热词搜索</a>&emsp;</li>
+                </ul>
+                <div class="clear"></div>
+                <p class="center font12 colorGray marginTop17">Copyright (C) 乐购网 2014-2016, All Rights Reserved</p>
+            </div>
+        </div>
+        <!--右侧二维码开始-->
+        <ul class="qrCode">
+            <li class="icon i1"></li>
+            <a href="vipCenter.html"><li class="li2"><p class="icon i2"></p><p class="icon code"></p></li></a>
+            <a href="shoppingCart.html"><li class="icon i3"><p class="publicCartNum center">3</p></li></a>
+        </ul>
+        <!--右侧二维码结束-->
+    </footer>
+    <!--脚部结束-->
+    <!--确认蒙层-->
+    <div class="areYouSure">
+        <div class="sureBox">
+            <div class="boxTitle font20">支付结果 <span class="fr cancel colorDeepGray font28">X</span></div>
+            <div class="sureInfo font22 center"><span class="sureIcon success"></span>已完成支付</div>
+            <div class="chooseBtn font20 center">
+                <input class="cancel current" type="button" value="确认">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

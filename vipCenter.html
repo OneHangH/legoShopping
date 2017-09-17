@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员中心-乐购商城</title>
+    <meta name="Description" content=""/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/lego.ico"/>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/public.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/vipCenter.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/slide.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <script src="scripts/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/tyslide.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/vipCenter.js" type="text/javascript" charset="utf-8"></script>
+    <!--[if lte IE 6]>
+    <script src="scripts/html5shiv.js" type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部开始-->
+    <header>
+        <!--登录注册-->
+        <div id="loginBar">
+            <div class="box1200">欢迎光临<span class="colorOrange">乐购</span>,请&nbsp;<a href="login.html">登录</a>\<a href="register.html">注册</a></div>
+        </div>
+        <!--logo+搜索-->
+        <div class="box1200" id="logoCartSearch2">
+            <!--logo-->
+            <div class="fl icon" id="logo2">
+                <a href="index.html"></a>
+                <p class="font28">会员中心</p>
+            </div>
+            <div class="fr" id="vipCenterTitle">
+                <div class="fl font22 marginTop17 colorDeepGray">乐我所乐，我的VIP！</div>
+                <ul class="fr">
+                    <li class="current">首页</li>
+                    <a href="myOrder.html"><li>我的订单</li></a>
+                    <li>会员特权</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--头部结束-->
+    <div class="clear"></div>
+    <!--轮播和会员信息开始-->
+    <div class="autoBox" id="bannerAndUserInfo">
+        <div class="box1200" id="bannerAndUserInfoCont">
+            <div class="fl" id="vipPrivilege">
+               <div class="font16 textIndex" id="privilegeTitle">会员每日特权</div>
+                <div class="privilegeCont bg1">
+                    <p class="font18 textIndex fontWeight"><a href="#">天天领乐豆</a></p>
+                    <p>每天可领<span class="colorOrange">15</span>乐豆</p>
+                    <p>每天10：00-21：00</p>
+                </div>
+                <div class="privilegeCont bg2">
+                    <p class="font18 textIndex fontWeight"><a href="#">大乐豆</a></p>
+                    <p>100乐豆</p>
+                    <p>赢iPhone</p>
+                </div>
+                <div class="privilegeCont bg3">
+                    <p class="font18 textIndex fontWeight"><a href="#">会员PLUS</a></p>
+                    <p>开放体验</p>
+                    <p>尊享权限</p>
+                </div>
+            </div>
+            <div class="fl" id="vipBanner">
+                <!--轮播1开始-->
+                <div class="pptbox fl" id="slideBox">
+                    <ul class="innerwrapper">
+                        <li><a href="#"><img src="images/banner4.jpg"/></a></li>
+                        <li><a href="#"><img src="images/banner1.jpg"/></a></li>
+                        <li><a href="#"><img src="images/banner2.jpg"/></a></li>
+                        <li><a href="#"><img src="images/banner3.jpg"/></a></li>
+                    </ul>
+                    <ul class="controls">
+                        <li class="current"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <span class="btnleft"></span>
+                    <span class="btnright"></span>
+                </div>
+                <!--轮播1结束-->
+            </div>
+            <div class="fr" id="userInfo">
+                <div class="box120 marginTop20">
+                    <span class="icon headerIcon"></span>
+                    <span><a class="font16" href="login.html">立即登录</a></span><br/>
+                    <span class="colorDeepGray">查看你的权限</span>
+                </div>
+                <div class="clear"></div>
+                <div class="box120">
+                    <p><span class="icon icon1"></span>我的乐豆： --</p>
+                    <p class="marginTop35"><span class="icon icon2"></span>我的优惠券： --</p>
+                </div>
+                <div class="box95 center">
+                    <p class="icon">已获得礼包</p>
+                    请<a class="colorBlack" href="login.html">登录</a>查看
+                </div>
+                <div class="box95 center">
+                    <p class="icon">可获得权限</p>
+                    请<a class="colorBlack" href="login.html">登录</a>查看
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--轮播和会员信息结束-->
+    <div class="clear"></div>
+    <!--优惠列表开始-->
+    <div class="autoBox" id="privilegeList">
+        <div class="box1200">
+            <div class="fl box290">
+                <img class="fr" src="images/vip1.jpg" alt="vip">
+                <p class="marginTop20 font22"><a href="#">PLUS专享</a></p>
+                <p class="marginTop5"><a href="#">20元现金卡</a></p>
+            </div>
+            <div class="fl box290">
+                <img class="fr" src="images/vip2.jpg" alt="vip">
+                <p class="marginTop20 font22"><a href="#">乐豆任务</a></p>
+                <p class="marginTop5"><a href="#">限时任务&emsp;领取</a></p>
+            </div>
+            <div class="fl box290">
+                <img class="fr" src="images/vip3.jpg" alt="vip">
+                <p class="marginTop20 font22"><a href="#">勋章馆</a></a></p>
+                <p class="marginTop5"><a href="#">家居家装用户</a></p>
+            </div>
+            <div class="fl box290">
+                <img class="fr" src="images/vip4.jpg" alt="vip">
+                <p class="marginTop20 font22"><a href="#">PLUS大礼包</a></p>
+                <p class="marginTop5"><a href="#">入会送150现金券</a></p>
+            </div>
+        </div>
+    </div>
+    <!--优惠列表结束-->
+    <div class="clear"></div>
+    <!--乐豆兑换券开始-->
+    <div class="box1200 marginTop20">
+        <!--标题-->
+        <div class="publicTitle">
+            <p class="titleTextBg">1F&nbsp;&nbsp;乐豆兑换券</p>
+        </div>
+        <div class="vipProductList">
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--乐豆兑换券结束-->
+    <!--广告开始-->
+    <div class="box1200 advertisement">
+        <a href="#"><img src="images/advertisement2.png" alt="广告"></a>
+    </div>
+    <!--广告结束-->
+    <!--会员特价开始-->
+    <div class="box1200 marginTop20">
+        <!--标题-->
+        <div class="publicTitle">
+            <p class="titleTextBg">2F&nbsp;&nbsp;会员特价</p>
+        </div>
+        <div class="vipProductList">
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210 marginRight32">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+            <div class="fl vipBox210">
+                <div class="addToCart">
+                    <p class="center font18"><span class="icon"></span>加入购物车</p>
+                </div>
+                <div class="boxTop center">
+                    <a href="#"><img src="images/vipProduct.jpg" alt="#"></a>
+                    <p class="icon tag">限量</p>
+                </div>
+                <div class="boxBottom">
+                    <p class="font14 center"><a href="#">乐购旗舰店</a></p>
+                    <p class="colorOrange font14 center"><span class="font18">减50</span>&emsp;满200元可用</p>
+                    <p class="btn center font14">15乐豆兑换</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--会员特价结束-->
+    <div class="clear"></div>
+    <!--会员特权开始-->
+    <div class="box1200 marginTop20" id="privilege">
+        <!--标题-->
+        <div class="publicTitle">
+            <p class="titleTextBg">3F&nbsp;&nbsp;会员特权</p>
+        </div>
+        <div class="fl privilegeCont">
+            <a href="#"><img src="images/vip5.jpg" alt="vip"></a>
+            <p class="font24 marginTop20"><a href="#">首汽约车&emsp;完美体验</a></p>
+            <p class="font14 marginTop8 colorDeepGray">价值20元现金券，快来抢</p>
+        </div>
+        <div class="fl privilegeCont">
+            <a href="#"><img src="images/vip6.jpg" alt="vip"></a>
+            <p class="font24 marginTop20"><a href="#">酒仙网&emsp;10乐豆抢鸡尾酒</a></p>
+            <p class="font14 marginTop8 colorDeepGray">抢兑鸡尾酒，超值体验</p>
+        </div>
+        <div class="fl privilegeCont">
+            <a href="#"> <img src="images/vip7.jpg" alt="vip"></a>
+            <p class="font24 marginTop20"><a href="#">山口山战记</a></p>
+            <p class="font14 marginTop8 colorDeepGray">PLUS特权礼拜&emsp;698宝石送不停</p>
+        </div>
+    </div>
+    <!--会员特权结束-->
+    <!--广告开始-->
+    <div class="box1200 advertisement marginTop20">
+        <a href="#"><img src="images/advertisement.png" alt="广告"></a>
+    </div>
+    <!--广告结束-->
+    <div class="clear"></div>
+    <!--脚部开始-->
+    <footer>
+        <div class="center" id="serverList">
+            <img src="images/222_11.png" alt="正规渠道">
+            <img src="images/222_13.png" alt="放心购物">
+            <img src="images/222_15.png" alt="次日到达">
+            <img src="images/222_17.png" alt="上门退货">
+        </div>
+        <div class="box1200 marginTop35" id="footerContent">
+            <div class="goTop"><img src="images/gototop_05.jpg" alt=""></div>
+            <div id="serverMenu">
+                <ul>
+                    <li><p class="font16">购物指南</p></li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">发票制度</a></li>
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">会员优惠</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">支付方式</p></li>
+                    <li><a href="#">货到付款</a></li>
+                    <li><a href="#">网上支付</a></li>
+                    <li><a href="#">礼品卡支付</a></li>
+                    <li><a href="#">银行转账</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">订单服务</p></li>
+                    <li><a href="#">订单配送查询</a></li>
+                    <li><a href="#">订单状态说明</a></li>
+                    <li><a href="#">自动取消订单</a></li>
+                    <li><a href="#">自助修改订单</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">退换货</p></li>
+                    <li><a href="#">退换货政策</a></li>
+                    <li><a href="#">自助申请退换货</a></li>
+                    <li><a href="#">退换货进度查询</a></li>
+                    <li><a href="#">退款方式和时间</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">上架服务</p></li>
+                    <li><a href="#">商家中心</a></li>
+                    <li><a href="#">运营服务</a></li>
+                    <li><a href="#">加入尾品会</a></li>
+                </ul>
+            </div>
+            <!--返回顶部-->
+            <div class="fr" id="footerLogo">
+                <img src="images/logo_00.png" alt="">
+            </div>
+            <div class="clear"></div>
+            <div class="marginTop35" id="copyright">
+                <ul>
+                    <li>&emsp;<a href="#">公司简介</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">Investor Relations</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">网站联盟</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">乐购招商</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">机构销售</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">手机乐购</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">官方logo</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">热词搜索</a>&emsp;</li>
+                </ul>
+                <div class="clear"></div>
+                <p class="center font12 colorGray marginTop17">Copyright (C) 乐购网 2014-2016, All Rights Reserved</p>
+            </div>
+        </div>
+        <!--右侧二维码开始-->
+        <ul class="qrCode">
+            <li class="icon i1"></li>
+            <a href="vipCenter.html"> <li class="li2"><p class="icon i2"></p><p class="icon code"></p></li></a>
+            <a href="shoppingCart.html"><li class="icon i3"><p class="publicCartNum center">3</p></li></a>
+        </ul>
+        <!--右侧二维码结束-->
+    </footer>
+    <!--脚部结束-->
+    <script src="scripts/footer.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>

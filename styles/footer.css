@@ -1,0 +1,117 @@
+footer{
+    height: 470px;
+}
+
+footer #serverList{
+    height: 95px;
+    background-color: #f2f2f2;
+    border-top: solid 5px #FF6700;
+    line-height: 90px;
+}
+footer #serverList img{
+    width: 132px;
+    height: 50px;
+    margin-right: 90px;
+}
+
+footer #footerContent{
+    position: relative;
+}
+
+footer #footerContent .goTop{
+    position: absolute;
+    top: -185px;
+    right: 0px;
+    overflow: hidden;
+}
+
+footer #footerContent .goTop img{
+    display: block;
+    position: relative;
+    bottom: -25px;
+    cursor: pointer;
+}
+
+footer #footerContent #serverMenu{
+    width: 750px;
+    margin: auto;
+}
+
+footer #footerContent #serverMenu ul{
+    width: 120px;
+    float: left;
+    margin: 0px 15px;
+    text-align: center;
+}
+
+footer #footerContent #serverMenu ul li{
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+footer #footerContent #footerLogo{
+    margin: 30px 30px 0px 0px;
+}
+
+footer #footerContent #copyright ul{
+    width: 800px;
+    margin: auto;
+}
+
+footer #footerContent #copyright li{
+    float: left;
+}
+
+/*右侧二维码*/
+footer .qrCode{
+    position: fixed;
+    top: 300px;
+    right: 0px;
+    z-index: 2000;
+}
+
+footer .qrCode li{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+footer .qrCode .i1{
+    background-position: -400px -299px;
+}
+
+footer .qrCode .li2{
+    height: 100px;
+    position: relative;
+}
+
+footer .qrCode .li2 .i2{
+    height: 100px;
+    background-position: -400px -339px;
+    position: relative;
+    z-index: 4000;
+}
+
+footer .qrCode .li2 .code{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3999;
+    background-position: -400px -199px;
+}
+
+footer .qrCode .i3{
+    background-position: -400px -440px;
+}
+
+footer .qrCode .i3 .publicCartNum{
+    width: 17px;
+    height: 17px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #ff0000;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下订单-乐购商城</title>
+    <meta name="keywords" content=""/>
+    <meta name="Description" content=""/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/lego.ico"/>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/public.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/submitOrder.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <script src="scripts/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/submitOrder.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/footer.js" type="text/javascript" charset="utf-8"></script>
+    <!--[if lte IE 6]>
+    <script src="scripts/html5shiv.js" type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部开始-->
+    <header>
+        <!--登录注册-->
+        <div id="loginBar">
+            <div class="box1200">欢迎光临<span class="colorOrange">乐购</span>,请&nbsp;<a href="login.html">登录</a>\<a href="register.html">注册</a></div>
+        </div>
+        <!--logo+搜索-->
+        <div class="box1200" id="logoCartSearch2">
+            <!--logo-->
+            <div class="fl icon" id="logo2">
+                <a href="index.html"></a>
+                <p class="font28">结算中心</p>
+            </div>
+            <!--搜索-->
+            <div class="fr" id="search">
+                <form id="searchFrom" action="" method="get">
+                    <input class="fl" type="text" name="" id="searchText" placeholder="创意文具" value="" />
+                    <input class="fl icon" type="submit" id="searchSubmit" name="" value="" />
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <!--头部结束-->
+    <!--订单信息开始-->
+    <div class="box1200 marginTop8" id="orderInfo">
+        <span class="font20">填写并核对订单信息</span>
+        <!--收货人信息-->
+        <div id="receiver">
+            <div class="infoTitle font18">
+                <span>收货人信息</span>
+                <span class="fr"><a class="colorBlue" href="#">新增收货地址</a></span>
+            </div>
+            <div class="infoCont">
+                <div class="marginTop20">
+                    <span class="choose center current">运送&emsp;四川</span>&emsp;&emsp;<span class="address">成都市&emsp;高新区&emsp;天府新谷11号楼1101</span>
+                    <span class="default center">默认收货地址</span>
+                </div>
+                <div class="marginTop35">
+                    更多收货地址：<br/>
+                    <span class="choose center">运送&emsp;四川</span>&emsp;&emsp;<span class="address">成都市&emsp;高新区&emsp;天府新谷11号楼2202</span>
+                </div>
+            </div>
+        </div>
+        <!--支付方式-->
+        <div class="marginTop20" id="payWay">
+            <div class="infoTitle font18">
+                <span>支付方式</span>
+            </div>
+            <div class="infoCont marginTop20">
+                <span class="choose center current">货到付款</span>
+                <span class="choose center">微信支付</span>
+                <span class="choose center">信用卡</span>
+                <span class="choose center">银行卡</span>
+                &emsp;&emsp;<a href="#">更多&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--送货清单-->
+        <div class="marginTop50" id="inventory">
+            <!--标题-->
+            <div class="infoTitle font18">
+                <span>送货清单</span>
+                <span class="fr"><a class="colorBlue" href="shoppingCart.html">返回购物车修改</a></span>
+                <span class="fr marginRight32"><a class="colorBlue" href="#">价格说明</a></span>
+            </div>
+            <div class="infoCont">
+                <!--配送方式-->
+                <div class="fl infoContText">
+                    <p>配送方式：</p>
+                    <p><span class="choose center current marginLeft22 marginTop8">顺丰快递</span></p>
+                    <p class="marginTop40"><span class="colorDeepGray">付款方式：</span>现金 <a class="fr colorBlue" href="#">修改</a></p>
+                    <p class="marginTop20"><span class="colorDeepGray">配送时间：</span>预计8月30日12：00-16：00送达 <a class="fr colorBlue" href="#">修改</a></p>
+                </div>
+                <!--商品列表-->
+                <div class="fr inventoryList">
+                    <ul>
+                        <li class="proImg"><a href="#"><img src="images/deom-bookImg.jpg" alt="图片"></a></li>
+                        <li class="proName"><a href="#">从你的全世界路过</a></li>
+                        <li class="proPrice">41.00</li>
+                        <li class="proNum">1</li>
+                        <li class="proState">有货</li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="invoice marginTop20">
+                    <p class="marginTop8">发票信息：</p>
+                    <p class="marginTop17"><span class="colorDeepGray">普通发票（电子）&emsp;&emsp;个人&emsp;明细</span>&emsp;<a class="colorBlue" href="#">修改</a></p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--订单信息结束-->
+    <!--结算开始-->
+    <div class="marginTop40 box1200" id="closeAccount">
+        <div class="font18" id="statistics">
+            <div class="fl width150"><span class="fontWeight colorOrange">1</span>&nbsp;件商品</div>
+            <div class="fl width230">总商品金额：<span class="fontWeight colorOrange">41.00</span></div>
+            <div class="fl width150">运费：<span class="fontWeight colorOrange">6.00</span></div>
+            <div class="fr font22 width245">应付总额：<span class="fontWeight colorOrange font24">47.00</span></div>
+        </div>
+        <div id="submitInfo">
+            配送至 <input id="sendAddress" type="text">&emsp;&emsp;
+            收货人 <input id="receiverName" type="text">
+            <input class="fr font22" id="submitOrder" type="button" value="提交订单">
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--结算结束-->
+    <!--广告开始-->
+    <div class="box1200 advertisement marginTop40">
+        <img src="images/advertisement.png" alt="广告">
+    </div>
+    <!--广告结束-->
+    <!--脚部开始-->
+    <footer>
+        <div class="center" id="serverList">
+            <img src="images/222_11.png" alt="正规渠道">
+            <img src="images/222_13.png" alt="放心购物">
+            <img src="images/222_15.png" alt="次日到达">
+            <img src="images/222_17.png" alt="上门退货">
+        </div>
+        <div class="box1200 marginTop35" id="footerContent">
+            <div id="serverMenu">
+                <ul>
+                    <li><p class="font16">购物指南</p></li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">发票制度</a></li>
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">会员优惠</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">支付方式</p></li>
+                    <li><a href="#">货到付款</a></li>
+                    <li><a href="#">网上支付</a></li>
+                    <li><a href="#">礼品卡支付</a></li>
+                    <li><a href="#">银行转账</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">订单服务</p></li>
+                    <li><a href="#">订单配送查询</a></li>
+                    <li><a href="#">订单状态说明</a></li>
+                    <li><a href="#">自动取消订单</a></li>
+                    <li><a href="#">自助修改订单</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">退换货</p></li>
+                    <li><a href="#">退换货政策</a></li>
+                    <li><a href="#">自助申请退换货</a></li>
+                    <li><a href="#">退换货进度查询</a></li>
+                    <li><a href="#">退款方式和时间</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">上架服务</p></li>
+                    <li><a href="#">商家中心</a></li>
+                    <li><a href="#">运营服务</a></li>
+                    <li><a href="#">加入尾品会</a></li>
+                </ul>
+            </div>
+            <div class="fr" id="footerLogo">
+                <img src="images/logo_00.png" alt="">
+            </div>
+            <div class="clear"></div>
+            <div class="marginTop35" id="copyright">
+                <ul>
+                    <li>&emsp;<a href="#">公司简介</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">Investor Relations</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">网站联盟</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">乐购招商</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">机构销售</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">手机乐购</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">官方logo</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">热词搜索</a>&emsp;</li>
+                </ul>
+                <div class="clear"></div>
+                <p class="center font12 colorGray marginTop17">Copyright (C) 乐购网 2014-2016, All Rights Reserved</p>
+            </div>
+        </div>
+        <!--右侧二维码开始-->
+        <ul class="qrCode">
+            <li class="icon i1"></li>
+            <a href="vipCenter.html"><li class="li2"><p class="icon i2"></p><p class="icon code"></p></li></a>
+            <a href="shoppingCart.html"><li class="icon i3"><p class="publicCartNum center">3</p></li></a>
+        </ul>
+        <!--右侧二维码结束-->
+    </footer>
+    <!--脚部结束-->
+    <!--确认蒙层-->
+    <div class="areYouSure">
+        <div class="sureBox">
+            <div class="boxTitle font20">确认付款 <span class="fr cancel colorDeepGray font28">X</span></div>
+            <div class="sureInfo font22 center"><span class="sureIcon"></span>是否去确认提交订单?</div>
+            <div class="chooseBtn font20 center">
+                <input class="cancel" type="button" value="取消">
+                <a href="counter.html"><input class="sure current" type="button" value="确认"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

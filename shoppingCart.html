@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车-乐购商城</title>
+    <meta name="keywords" content=""/>
+    <meta name="Description" content=""/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/lego.ico"/>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/public.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/shoppingCart.css"/>
+    <link href="styles/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="styles/city-picker.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <script src="scripts/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/city-picker.data.js"></script>
+    <script src="scripts/city-picker.js"></script>
+    <script src="scripts/main.js"></script>
+    <!--[if lte IE 6]>
+    <script src="scripts/html5shiv.js" type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部开始-->
+    <header>
+        <!--登录注册-->
+        <div id="loginBar">
+            <div class="box1200">欢迎光临<span class="colorOrange">乐购</span>,请&nbsp;<a href="login.html">登录</a>\<a href="register.html">注册</a></div>
+        </div>
+        <!--logo+搜索-->
+        <div class="box1200" id="logoCartSearch2">
+            <!--logo-->
+            <div class="fl icon" id="logo2">
+                <a href="index.html"></a>
+                <p class="font28">购物车</p>
+            </div>
+            <!--搜索-->
+            <div class="fr" id="search">
+                <form id="searchFrom" action="" method="get">
+                    <input class="fl" type="text" name="" id="searchText" placeholder="创意文具" value="" />
+                    <input class="fl icon" type="submit" id="searchSubmit2" name="" value="" />
+                </form>
+            </div>
+            <div class="clear"></div>
+            <div class="fr  marginTop8" id="address">
+                <span class="fl">配送至</span>
+                <div class="docs-methods fr">
+                    <form class="form-inline">
+                        <div id="distpicker">
+                            <div class="form-group">
+                                <div style="position: relative;">
+                                    <input id="city-picker3" class="form-control" readonly type="text" value="江苏省/常州市/溧阳市" data-toggle="city-picker">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--头部结束-->
+    <div class="clear"></div>
+    <!--购物车主体开始-->
+    <div class="box1200" id="shoppingCart">
+        <div id="cartTitle">
+            <p class="font22 colorOrange">全部商品（<span id="kindQuantity">2</span>）</p>
+        </div>
+        <div></div>
+        <div id="cartContent">
+            <ul id="carContTitle">
+                <li class="check center"><input type="checkbox" class="checkAll">全选</li>
+                <li class="product center">商品</li>
+                <li class="price">单价</li>
+                <li class="quantity center">数量</li>
+                <li class="totalRow center">小计</li>
+                <li class="operation">操作</li>
+            </ul>
+            <div class="borderTop marginTop20">
+                <ul class="carConDetail">
+                    <li class="check center"><input type="checkbox" class="checkRow"></li>
+                    <li class="product">
+                       <img class="fl" src="images/demo-book1.jpg" alt="">
+                        <a href=""><p class="textIndex">东野童话 白夜行</p></a>
+                    </li>
+                    <li class="price">&yen;<span>53.00</span></li>
+                    <li class="quantity center">
+                        <input type="button" class="sub" value="-">
+                        <input type="text" class="num" value="1">
+                        <input type="button" class="add" value="+">
+                        <p class="error colorRed font14">请输入合法的数字</p>
+                    </li>
+                    <li class="totalRow center">&yen;<span>53.00</span></li>
+                    <li class="operation"><a class="del" href="javascript:;">删除</a><br/><a href="javascript:;">移到我的关注</a></li>
+                </ul>
+                <ul class="carConDetail">
+                    <li class="check center">
+                        <input type="checkbox" class="checkRow">
+                        <!--<div class="checkboxDiv"></div>-->
+                    </li>
+                    <li class="product">
+                        <a href=""><img class="fl" src="images/demo-book2.jpg" alt=""></a>
+                        <a href=""><p class="textIndex">偷影子的人</p></a>
+                    </li>
+                    <li class="price">&yen;<span>33.50</span></li>
+                    <li class="quantity center">
+                        <input type="button" class="sub" value="-">
+                        <input type="text" class="num" value="1">
+                        <input type="button" class="add" value="+">
+                        <p class="error colorRed font14">请输入合法的数字</p>
+                    </li>
+                    <li class="totalRow center">&yen;<span>33.50</span></li>
+                    <li class="operation"><a class="del" href="javascript:;">删除</a><br/><a href="javascript:;">移到我的关注</a></li>
+                </ul>
+            </div>
+            <ul class="marginTop35" id="statistics">
+                <li><input type="checkbox" class="checkAll">全选</li>
+                <li><a id="delChecked" href="javascript:;">删除选中的商品</a></li>
+                <li class="width636">已选择 <span class="fontWeight colorOrange font20" id="selectedNum">1</span> 件商品</li>
+                <li class="width150">总价 <span class="fontWeight colorOrange font20" id="totalPrice">41.00</span></li>
+                <li><input class="submitBtn" type="submit" value="去结算"></li>
+            </ul>
+        </div>
+    </div>
+    <!--购物车主体结束-->
+    <!--猜你喜欢开始-->
+    <div class="box1200 marginTop40">
+        <!--标题-->
+        <div class="publicTitle">
+            <p class="titleTextBg">猜你喜欢</p>
+        </div>
+        <div id="discountBooksList">
+            <div class="box210">
+                <p class="center marginTop5"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                <p class="icon discount font16 center">8折</p>
+                <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+                <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+                <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+            </div>
+            <div class="box210">
+                <p class="center marginTop5"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                <p class="icon discount font16 center">8折</p>
+                <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+                <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+                <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+            </div>
+            <div class="box210">
+                <p class="center marginTop5"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                <p class="icon discount font16 center">8折</p>
+                <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+                <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+                <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+            </div>
+            <div class="box210">
+                <p class="center marginTop5"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                <p class="icon discount font16 center">8折</p>
+                <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+                <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+                <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+            </div>
+            <div class="box210">
+                <p class="center marginTop5"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                <p class="icon discount font16 center">8折</p>
+                <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+                <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+                <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+            </div>
+        </div>
+    </div>
+    <!--猜你喜欢结束-->
+    <div class="clear"></div>
+    <!--广告开始-->
+    <div class="box1200 advertisement marginTop40"><img src="images/advertisement.png" alt="广告"></div>
+    <!--广告结束-->
+    <!--脚部开始-->
+    <footer>
+        <div class="center" id="serverList">
+            <img src="images/222_11.png" alt="正规渠道">
+            <img src="images/222_13.png" alt="放心购物">
+            <img src="images/222_15.png" alt="次日到达">
+            <img src="images/222_17.png" alt="上门退货">
+        </div>
+        <div class="box1200 marginTop35" id="footerContent">
+            <div id="serverMenu">
+                <ul>
+                    <li><p class="font16">购物指南</p></li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">发票制度</a></li>
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">会员优惠</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">支付方式</p></li>
+                    <li><a href="#">货到付款</a></li>
+                    <li><a href="#">网上支付</a></li>
+                    <li><a href="#">礼品卡支付</a></li>
+                    <li><a href="#">银行转账</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">订单服务</p></li>
+                    <li><a href="#">订单配送查询</a></li>
+                    <li><a href="#">订单状态说明</a></li>
+                    <li><a href="#">自动取消订单</a></li>
+                    <li><a href="#">自助修改订单</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">退换货</p></li>
+                    <li><a href="#">退换货政策</a></li>
+                    <li><a href="#">自助申请退换货</a></li>
+                    <li><a href="#">退换货进度查询</a></li>
+                    <li><a href="#">退款方式和时间</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">上架服务</p></li>
+                    <li><a href="#">商家中心</a></li>
+                    <li><a href="#">运营服务</a></li>
+                    <li><a href="#">加入尾品会</a></li>
+                </ul>
+            </div>
+            <div class="fr" id="footerLogo">
+                <img src="images/logo_00.png" alt="">
+            </div>
+            <div class="clear"></div>
+            <div class="marginTop35" id="copyright">
+                <ul>
+                    <li>&emsp;<a href="#">公司简介</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">Investor Relations</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">网站联盟</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">乐购招商</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">机构销售</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">手机乐购</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">官方logo</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">热词搜索</a>&emsp;</li>
+                </ul>
+                <div class="clear"></div>
+                <p class="center font12 colorGray marginTop17">Copyright (C) 乐购网 2014-2016, All Rights Reserved</p>
+            </div>
+        </div>
+        <!--右侧二维码开始-->
+        <ul class="qrCode">
+            <li class="icon i1"></li>
+            <a href="vipCenter.html"> <li class="li2"><p class="icon i2"></p><p class="icon code"></p></li></a>
+            <a href="shoppingCart.html"><li class="icon i3"><p class="publicCartNum center">3</p></li></a>
+        </ul>
+        <!--右侧二维码结束-->
+    </footer>
+    <!--脚部结束-->
+    <!--确认蒙层-->
+    <div class="areYouSure">
+        <div class="sureBox">
+            <div class="boxTitle font20">确认付款 <span class="fr cancel colorDeepGray font28">X</span></div>
+            <div class="sureInfo font22 center"><span class="sureIcon"></span>是否去付款中心付款?</div>
+            <div class="chooseBtn font20 center">
+                <input class="cancel" type="button" value="取消">
+                <a href="submitOrder.html"><input class="sure current" type="button" value="确认"></a>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/shoppingCart.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/footer.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>

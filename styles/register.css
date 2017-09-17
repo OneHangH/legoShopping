@@ -1,0 +1,100 @@
+header{
+    border-bottom: 1px solid #E7E7E7;
+    box-shadow: 1px 2px 2px #E6E6E6;
+}
+
+header #loginTitle{
+    width: 920px;
+    height: 65px;
+    line-height: 65px;
+    padding-left: 280px;
+}
+
+#registerForm{
+    width: 402px;
+    margin: auto;
+    position: relative;
+}
+
+#registerForm .pFather{
+    position: relative;
+}
+
+#registerForm .pFather .verify{
+    width: 125px;
+    height: 36px;
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    background-color: #1A83E5;
+    cursor: pointer;
+}
+
+#registerForm .pFather #msgVerify{
+    background-color: #E6E6E6;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+#registerForm input{
+    height: 42px;
+    width: 400px;
+    border: solid 1px #D9D9D9;
+    margin-bottom: 50px;
+    text-indent: 130px;
+    font-size: 16px;
+}
+
+#registerForm input[type="checkbox"]{
+    width: 12px;
+    height: 12px;
+    margin-bottom: 0px;
+}
+
+#registerForm input[id="phoneVerify"]{
+    margin-bottom: 10px;
+}
+
+#registerForm #submit{
+    background-color: #FF6700;
+    color: #fff;
+    font-size: 26px;
+    line-height: 26px;
+    cursor: pointer;
+    text-indent: 0px;
+}
+
+#registerForm #inputTitle{
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    font-size: 22px;
+}
+
+#registerForm #inputTitle li{
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 52px;
+    color: #666;
+}
+
+#registerForm #error{
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    font-size: 16px;
+}
+
+#registerForm #error li{
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 52px;
+    color: #ff0000;
+    opacity: 0;
+}
+

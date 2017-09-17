@@ -1,0 +1,297 @@
+/*主菜单*/
+#classBanner #mainMenu{
+	width: 200px;
+	background-color: #F3F3F3;
+	position: relative;
+	z-index: 100;
+}
+
+#classBanner #mainMenu li{
+	height: 30px;
+	line-height: 30px;
+}
+
+#classBanner #mainMenu li p{
+	border: 1px solid transparent;
+	padding-left: 20px;
+}
+
+#classBanner #mainMenu li .current{
+	background-color: #fff;
+	height: 30px;
+	border: 1px solid #FF6700;
+	border-right: none;
+	position: relative;
+	z-index: 100;
+}
+
+/*子菜单*/
+#classBanner #mainMenu li .subMenu{
+	width: 545px;
+	min-height: 420px;
+	
+	padding-left: 35px;
+	border: solid 1px #FF6700;
+	background-color: #fff;
+	
+	position: absolute;
+	top: 0px;
+	left: 199px;
+	z-index: 99;
+	display: none;
+}
+
+#classBanner #mainMenu .subMenu a{
+	font-size: 12px;
+	margin-right: 30px;
+}
+
+#classBanner #mainMenu .subMenu .subMenuContent dt{
+	width: 475px;
+	font-size: 14px;
+	color: #FF6700;
+	border-bottom: 2px solid #E6E6E6;
+}
+
+#classBanner #mainMenu .subMenu .subMenuContent a{
+	margin-right: 6px;
+}
+
+#classBanner #Banner{
+	position: relative;
+	z-index: 50;
+}
+
+/*今日推荐*/
+#recommend #recContent{
+	width: 1188px;
+	margin: 0px auto;
+	border-right: 2px solid #FF6700;
+}
+
+#recommend #recContent .recProduct{
+	width: 196px;
+	height: 244px;
+	float: left;
+	border-bottom: solid 2px #FF6700;
+	border-left: solid 2px #FF6700;
+}
+
+#recommend #recContent .recProduct .current{
+	position: relative;
+	top:-5px;
+}
+
+#recommend #recContent .recProduct p{
+	padding-left: 5px;
+}
+
+#recommend #recContent .recProduct img{
+	margin-top: 5px;
+}
+
+#recommend #recContent .recProduct .limitTime{
+	width: 75px;
+	height: 24px;
+	background-position: -202px -100px;
+}
+
+/*电子书*/
+/*电子书主体*/
+#eBook #eBookBody{
+	width: 912px;
+}
+
+/*商品楼层详情*/
+#eBook #eBookBody #eBookContent .productDetail{
+	width: 672px;
+	height: 440px;
+	display: none;
+}
+
+#eBook #eBookBody #eBookContent .productDetail .productDetail_168{
+	width: 166px;
+	height: 203px;
+	padding-top: 15px;
+}
+
+#eBook #eBookBody #eBookContent .productDetail .productDetail_334{
+	width: 334px;
+	height: 218px;
+}
+
+/*电子书排行榜*/
+#eBook #bookRank{
+	width: 276px;
+	height: 440px;
+	margin-top: 40px;
+	border: solid 2px #ccc;
+	overflow: hidden;
+}
+
+#eBook #bookRank ul{
+	margin-top: 10px;
+}
+
+#eBook #bookRank li:after{
+	content: "";
+	display: block;
+	width: 0px;
+	height: 0px;
+	clear: both;
+}
+
+#eBook #bookRank li p{
+	float: left;
+}
+
+#eBook #bookRank li .rankNum{
+	width: 15px;
+	height: 40px;
+	margin-left: 10px;
+	line-height: 40px;
+}
+
+#eBook #bookRank li .bookImg,#eBook #bookRank li .bookText{
+	width: 251px;
+	border-bottom: 2px solid #E6E6E6;
+}
+
+#eBook #bookRank li .bookImg{
+	line-height: 20px;
+	display: none;
+}
+
+#eBook #bookRank li .bookImg img{
+	float: left;
+	margin-right: 5px;
+}
+
+#eBook #bookRank li .bookText{
+	height: 40px;
+	line-height: 40px;
+	text-indent: 5px;
+}
+
+/*推广商品*/
+#pop{
+	overflow-x: hidden;
+}
+#pop #popTitle #popTab li{
+	float: left;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #c0c0c0;
+	margin-right: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+#pop #popTitle #popTab .current{
+	background-color: #FF6700;
+}
+
+#pop #popBigBox{
+	width: 2420px;
+	position: relative;
+	left: 0px;
+}
+
+#pop #popBigBox .popContent{
+	margin-left: 10px;
+}
+
+#pop #popBigBox .popContent .box215{
+	width: 152px;
+	height: 275px;
+	float: left;
+	margin: 10px 23px 0px 0px;
+	padding: 25px 32px 0px 31px;
+}
+
+#pop #popBigBox .popContent .box215:hover{
+	background-color: #f2f2f2;
+}
+
+#pop #popBigBox .popContent .box215 img{
+	width: 152px;
+	height: 152px;
+}
+
+#pop #popBigBox .popContent .box215 .comment{
+	width: 35px;
+	height: 22px;
+	display: block;
+	float: left;
+	background-position: -200px -198px;
+}
+
+/*楼层滚动*/
+#floorScroll
+{
+	width: 40px;
+	position: fixed;
+	z-index: 1100;
+	left: 0px;
+	top: 200px;
+	display: none;
+}
+
+#floorScroll li
+{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background-color: #F2F2F2;
+}
+
+#floorScroll li span
+{
+	color: #fff;
+	font-size: 14px;
+	position: relative;
+	right: -45px;
+	top: 8px;
+}
+
+#floorScroll .i1
+{
+	background-position: 0px -240px;
+}
+
+#floorScroll .i2
+{
+	background-position: 0px 0px;
+}
+
+#floorScroll .i3
+{
+	background-position: 0px -40px;
+}
+
+#floorScroll .i4
+{
+	background-position: 0px -160px;
+}
+
+#floorScroll .i5
+{
+	background-position: 0px -80px;
+}
+
+#floorScroll .i6
+{
+	background-position: 0px -320px;
+}
+
+#floorScroll .i7
+{
+	background-position: 0px -440px;
+}
+
+#floorScroll .i8
+{
+	background-position: 0px -520px;
+}
+

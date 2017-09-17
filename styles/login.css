@@ -1,0 +1,143 @@
+header #loginTitle{
+    width: 920px;
+    height: 65px;
+    line-height: 65px;
+    padding-left: 280px;
+}
+
+#login{
+    background-color: #E83953;
+}
+
+#login #loginBody{
+    height: 500px;
+    background: url(../images/loginBg.jpg) no-repeat;
+}
+
+/*登录盒子*/
+#login #loginBody #loginBox{
+    width: 351px;
+    height: 370px;
+    margin: 65px 0px 65px 750px;
+    background: #fff;
+}
+
+/*账户登录*/
+#login #loginBody #loginBox #loginType{
+    height: 24px;
+    padding: 15px 10px;
+    border-bottom: solid 1px #F6F6F6;
+}
+
+#login #loginBody #loginBox #loginType li{
+    float: left;
+    height: 22px;
+    padding: 0px 35px;
+    font-size: 22px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+#login #loginBody #loginBox .loginCont{
+    height: 316px;
+    position: relative;
+}
+
+#login #loginBody #loginBox .loginCont form{
+    width: 292px;
+    height: 220px;
+    margin: auto;
+    padding-top: 40px;
+    position: relative;
+}
+
+#login #loginBody #loginBox .loginCont .nameIcon,#login #loginBody #loginBox .loginCont .pswIcon{
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    position: absolute;
+    top: 41px;
+    left: 1px;
+    background-position: -400px -150px;
+}
+
+#login #loginBody #loginBox .loginCont .pswIcon{
+    top: 94px;
+    background-position: -448px -150px;
+}
+
+#login #loginBody #loginBox .loginCont .del{
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    position: absolute;
+    top: 41px;
+    right: 1px;
+    cursor: pointer;
+
+    font-size: 20px;
+    color: #EAEAEA;
+    text-align: center;
+    line-height: 36px;
+
+    display: none;
+}
+
+#login #loginBody #loginBox .loginCont .delPsw{
+    top: 94px;
+}
+
+#login #loginBody #loginBox .loginCont input{
+    margin-bottom: 15px;
+}
+
+#login #loginBody #loginBox .loginCont input[type=text]{
+    width: 290px;
+    height: 36px;
+    border: 1px solid #BFBFBF;
+    text-indent: 45px;
+}
+
+#login #loginBody #loginBox .loginCont #submit{
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #FF6700;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#login #loginBody #loginBox #goToRegister{
+    line-height: 50px;
+    border-top: 2px solid #E6E6E6;
+}
+
+#login #loginBody #loginBox #goToRegister span{
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    margin-right: 5px;
+    background-position: -200px -242px;
+}
+
+/*扫码登录*/
+#login #loginBody #loginBox .loginCont #qrCode{
+    position: absolute;
+    top: 65px;
+    left: 100px;
+    cursor: pointer;
+}
+
+#login #loginBody #loginBox .loginCont #loginPhone{
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    display: none;
+}
+
+#login #loginBody #loginBox .loginCont .open{
+    position: absolute;
+    bottom: 45px;
+    left: 80px;
+}

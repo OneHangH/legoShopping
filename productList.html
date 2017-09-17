@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>乐购商城-产品列表</title>
+    <meta name="keywords" content=""/>
+    <meta name="Description" content=""/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/lego.ico"/>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/public.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/header.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/slide.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/productList.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <script src="scripts/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/tyslide.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/beforeEffects.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/productList.js" type="text/javascript" charset="utf-8"></script>
+    <!--[if lte IE 6]>
+        <script src="scripts/html5shiv.js" type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--头部开始-->
+    <header>
+        <!--登录注册-->
+        <div id="loginBar">
+            <div class="box1200">欢迎光临<span class="colorOrange">乐购</span>,请&nbsp;<a href="login.html">登录</a>\<a href="register.html">注册</a></div>
+        </div>
+        <!--logo+搜索+购物车-->
+        <div class="box1200" id="logoCartSearch">
+            <!--logo-->
+            <div id="logo">
+                <a href="index.html" id="logoTitle">
+                    <span>乐购<br/>生活</span>
+                </a>
+            </div>
+            <!--购物车+我的订单-->
+            <ul class="fr" id="shopppingCart">
+                <li class="icon cart current">购物车 3</li>
+                <li>我的订单</li>
+            </ul>
+            <!--搜索-->
+            <div class="fr" id="search">
+                <form id="searchFrom" action="" method="get">
+                    <input class="fl" type="text" name="" id="searchText" placeholder="创意文具" value="" />
+                    <input class="fl icon" type="submit" id="searchSubmit" name="" value="" />
+                </form>
+            </div>
+        </div>
+        <!--导航条-->
+        <div class="box1200" id="classNav">
+            <div class="font16 fl fontWeight icon green" id="class">
+                <p>全部商品分类</p>
+            </div>
+            <ul class="fl font16 fontWeight" id="mainNav">
+                <li><a href="#">图书</a></li>
+                <li><a href="#">电子书</a></li>
+                <li><a href="#">原创文学</a></li>
+                <li><a href="#">服装</a></li>
+                <li><a href="#">运动户外</a></li>
+                <li><a href="#">孕婴童</a></li>
+                <li><a href="#">家居</a></li>
+                <li><a href="#">创意文具</a></li>
+                <li><a href="#">地方特产</a></li>
+                <li><a href="#">海外购</a></li>
+                <li><a href="#">电器城</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--头部结束-->
+    <!--轮播+热卖开始-->
+    <div class="box1200" id="bannerHot">
+            <!--轮播开始-->
+            <div class="pptbox fl" id="slideBox">
+                <ul class="innerwrapper">
+                    <li><a href="#"><img src="images/banner4.jpg"/></a></li>
+                    <li><a href="#"><img src="images/banner1.jpg"/></a></li>
+                    <li><a href="#"><img src="images/banner2.jpg"/></a></li>
+                    <li><a href="#"><img src="images/banner3.jpg"/></a></li>
+                    <li><a href="#"><img src="images/banner5.jpg"/></a></li>
+                </ul>
+                <ul class="controls">
+                    <li class="current">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <span class="btnleft"></span>
+                <span class="btnright"></span>
+            </div>
+            <!--轮播结束-->
+        <div class="fr" id="hot">
+            <div class="textIndex font18" id="hotTitle">
+                热卖畅销
+            </div>
+            <div id="hotContent">
+                <div class="hotDetail current">
+                    <p class="fl"><a href="productDetail.html"><img class="marginTop20" src="images/demo-hotBook1.jpg" alt=""></a></p>
+                    <p class="hotNum"><span class="bgOrange">1</span></p>
+                    <p><a href="productDetail.html">《三体》刘慈欣一场科幻的史诗风暴</a></p>
+                </div>
+                <div class="hotDetail">
+                    <p class="fl"><a href=""><img src="images/demo-hotBook1.jpg" alt=""></a></p>
+                    <p class="hotNum"><span class="bgOrange">2</span></p>
+                    <p><a href="">《三体》刘慈欣一场科幻的史诗风暴</a></p>
+                </div>
+                <div class="hotDetail">
+                    <p class="fl"><a href=""><img src="images/demo-hotBook1.jpg" alt=""></a></p>
+                    <p class="hotNum"><span class="bgOrange">3</span></p>
+                    <p><a href="">《三体》刘慈欣一场科幻的史诗风暴</a></p>
+                </div>
+                <div class="hotDetail">
+                    <p class="fl"><a href=""><img src="images/demo-hotBook1.jpg" alt=""></a></p>
+                    <p class="hotNum"><span class="bgGray">4</span></p>
+                    <p><a href="">《三体》刘慈欣一场科幻的史诗风暴</a></p>
+                </div>
+                <div class="hotDetail">
+                    <p class="fl"><a href=""><img src="images/demo-hotBook1.jpg" alt=""></a></p>
+                    <p class="hotNum"><span class="bgGray">5</span></p>
+                    <p><a href="">《三体》刘慈欣一场科幻的史诗风暴</a></p>
+                </div>
+                <div class="hotDetail">
+                    <p class="fl"><a href=""><img src="images/demo-hotBook1.jpg" alt=""></a></p>
+                    <p class="hotNum"><span class="bgGray">6</span></p>
+                    <p><a href="">《三体》刘慈欣一场科幻的史诗风暴</a></p>
+                </div>
+                <div class="hotDetail">
+                    <p class="fl"><a href=""><img src="images/demo-hotBook1.jpg" alt=""></a></p>
+                    <p class="hotNum"><span class="bgGray">7</span></p>
+                    <p><a href="">《三体》刘慈欣一场科幻的史诗风暴</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--轮播+热卖结束-->
+    <!--广告开始-->
+    <div class="box1200 advertisement"><img src="images/advertisement.png" alt="广告"></div>
+    <!--广告结束-->
+    <!--折扣区开始-->
+    <div class="box1200 marginTop20" id="discountBooks">
+        <!--标题-->
+        <div class="publicTitle">
+            <p class="titleTextBg">乐购●图书折扣区</p>
+        </div>
+        <!--折扣书列表-->
+       <div id="discountBooksList">
+           <div class="box210">
+               <p class="center marginTop5"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+               <p class="icon discount font16 center">8折</p>
+               <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+               <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+               <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+           </div>
+           <div class="box210">
+               <p class="center marginTop5"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+               <p class="icon discount font16 center">8折</p>
+               <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+               <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+               <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+           </div>
+           <div class="box210">
+               <p class="center marginTop5"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+               <p class="icon discount font16 center">8折</p>
+               <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+               <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+               <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+           </div>
+           <div class="box210">
+               <p class="center marginTop5"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+               <p class="icon discount font16 center">8折</p>
+               <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+               <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+               <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+           </div>
+           <div class="box210">
+               <p class="center marginTop5"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+               <p class="icon discount font16 center">8折</p>
+               <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+               <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+               <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+           </div>
+           <div class="box210">
+               <p class="center marginTop5"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+               <p class="icon discount font16 center">6折</p>
+               <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+               <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+               <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+           </div>
+           <div class="box210">
+               <p class="center marginTop5"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+               <p class="icon discount font16 center">6折</p>
+               <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+               <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+               <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+           </div>
+           <div class="box210">
+               <p class="center marginTop5"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+               <p class="icon discount font16 center">6折</p>
+               <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+               <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+               <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+           </div>
+           <div class="box210">
+               <p class="center marginTop5"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+               <p class="icon discount font16 center">6折</p>
+               <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+               <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+               <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+           </div>
+           <div class="box210">
+               <p class="center marginTop5"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+               <p class="icon discount font16 center">6折</p>
+               <p class="textIndex font16"><a href="#">白夜行 东野上吾</a></p>
+               <p class="icon bookPop font14 colorOrange textIndex">推荐：</p>
+               <p class="textIndex font24"><span class="colorOrange">&yen;：33</span>&emsp;<span class="fontGray fontDel">&yen;：58</span></p>
+           </div>
+       </div>
+    </div>
+    <!--折扣区结束-->
+    <div class="clear"></div>
+    <!--新书上架开始-->
+    <div class="box1200" id="newBooks">
+        <!--新书列表-->
+        <div class="fl" id="newBookList">
+            <!--标题-->
+            <div class="publicTitle">
+                <p class="titleTextBg">新</p><span class="font22 textIndex marginLeft5">书上架</span>
+            </div>
+            <!--内容-->
+            <div id="newBookDetail">
+                <div class="fl box180">
+                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box180">
+                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box180">
+                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box180">
+                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box180">
+                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box180">
+                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box180">
+                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box180">
+                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box180">
+                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box180">
+                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--主编推荐-->
+        <div class="fr" id="bookRank">
+            <p class="center font24">主编推荐</p>
+            <ul>
+                <li>
+                    <p class="rankNum colorOrange">1</p>
+                    <p class="bookImg" style="display: block"><a href="#"><img src="images/deom-bookImg.jpg"></a>从你的世界路过入选央视"2014中国好书"的80后作品!十年华语畅销小说,王家卫陈国富倾力推荐,1500万次转发,超4亿次阅读</p>
+                    <p class="bookText" style="display: none"><a href="#">我最喜欢你看不惯我&emsp;又干不</a></p>
+                </li>
+                <li>
+                    <p class="rankNum colorOrange">2</p>
+                    <p class="bookImg"><a href="#"><img src="images/deom-bookImg.jpg"></a>从你的世界路过入选央视"2014中国好书"的80后作品!十年华语畅销小说,王家卫陈国富倾力推荐,1500万次转发,超4亿次阅读</p>
+                    <p class="bookText"><a href="#">我最喜欢你看不惯我&emsp;又干不</a></p>
+                </li>
+                <li>
+                    <p class="rankNum colorOrange">3</p>
+                    <p class="bookImg"><a href="#"><img src="images/deom-bookImg.jpg"></a>从你的世界路过入选央视"2014中国好书"的80后作品!十年华语畅销小说,王家卫陈国富倾力推荐,1500万次转发,超4亿次阅读</p>
+                    <p class="bookText"><a href="#">我最喜欢你看不惯我&emsp;又干不</a></p>
+                </li>
+                <li>
+                    <p class="rankNum">4</p>
+                    <p class="bookImg"><a href="#"><img src="images/deom-bookImg.jpg"></a>从你的世界路过入选央视"2014中国好书"的80后作品!十年华语畅销小说,王家卫陈国富倾力推荐,1500万次转发,超4亿次阅读</p>
+                    <p class="bookText"><a href="#">我最喜欢你看不惯我&emsp;又干不</a></p>
+                </li>
+                <li>
+                    <p class="rankNum">5</p>
+                    <p class="bookImg"><a href="#"><img src="images/deom-bookImg.jpg"></a>从你的世界路过入选央视"2014中国好书"的80后作品!十年华语畅销小说,王家卫陈国富倾力推荐,1500万次转发,超4亿次阅读</p>
+                    <p class="bookText"><a href="#">我最喜欢你看不惯我&emsp;又干不</a></p>
+                </li>
+                <li>
+                    <p class="rankNum">6</p>
+                    <p class="bookImg"><a href="#"><img src="images/deom-bookImg.jpg"></a>从你的世界路过入选央视"2014中国好书"的80后作品!十年华语畅销小说,王家卫陈国富倾力推荐,1500万次转发,超4亿次阅读</p>
+                    <p class="bookText"><a href="#">我最喜欢你看不惯我&emsp;又干不</a></p>
+                </li>
+                <li>
+                    <p class="rankNum">7</p>
+                    <p class="bookImg"><a href="#"><img src="images/deom-bookImg.jpg"></a>从你的世界路过入选央视"2014中国好书"的80后作品!十年华语畅销小说,王家卫陈国富倾力推荐,1500万次转发,超4亿次阅读</p>
+                    <p class="bookText"><a href="#">我最喜欢你看不惯我&emsp;又干不</a></p>
+                </li>
+                <li>
+                    <p class="rankNum">8</p>
+                    <p class="bookImg"><a href="#"><img src="images/deom-bookImg.jpg"></a>从你的世界路过入选央视"2014中国好书"的80后作品!十年华语畅销小说,王家卫陈国富倾力推荐,1500万次转发,超4亿次阅读</p>
+                    <p class="bookText"><a href="#">我最喜欢你看不惯我&emsp;又干不</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--新书上架结束-->
+    <div class="clear"></div>
+    <!--独家提供开始-->
+    <div class="borderBottom box1200 marginTop40 paddingBottom10" id="exclusive">
+        <div class="publicTitle publicProductTitle" id="exclusiveTitle">
+            <p class="titleTextBg">独</p><span class="font22 textIndex marginLeft5">家提供</span>
+            <!--tab滑动-->
+            <ul class="tabTitle">
+                <li class="current">货币金融</li>
+                <li>社会文学</li>
+                <li>科学技术</li>
+                <li>儿童文学</li>
+                <li>教学参辅</li>
+                <li>生活</li>
+                <li>小说</li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="publicProductCon" id="exclusiveContent">
+            <!--货币金融-->
+            <div class="publicProductDetail" style="display: block">
+                <!--轮播区域-->
+                <div class="pptbox exclusiveBanner">
+                    <ul class="innerwrapper">
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="controls">
+                        <li class="current"></li>
+                        <li></li>
+                    </ul>
+                    <span class="btnleft"></span>
+                    <span class="btnright"></span>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--社会文学-->
+            <div class="publicProductDetail">
+                <!--轮播区域-->
+                <div class="pptbox exclusiveBanner">
+                    <ul class="innerwrapper">
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="controls">
+                        <li class="current"></li>
+                        <li></li>
+                    </ul>
+                    <span class="btnleft"></span>
+                    <span class="btnright"></span>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--科学技术-->
+            <div class="publicProductDetail">
+                <!--轮播区域-->
+                <div class="pptbox exclusiveBanner">
+                    <ul class="innerwrapper">
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="controls">
+                        <li class="current"></li>
+                        <li></li>
+                    </ul>
+                    <span class="btnleft"></span>
+                    <span class="btnright"></span>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--儿童文学-->
+            <div class="publicProductDetail">
+                <!--轮播区域-->
+                <div class="pptbox exclusiveBanner">
+                    <ul class="innerwrapper">
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="controls">
+                        <li class="current"></li>
+                        <li></li>
+                    </ul>
+                    <span class="btnleft"></span>
+                    <span class="btnright"></span>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--教学参辅-->
+            <!--社会文学-->
+            <div class="publicProductDetail">
+                <!--轮播区域-->
+                <div class="pptbox exclusiveBanner">
+                    <ul class="innerwrapper">
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="controls">
+                        <li class="current"></li>
+                        <li></li>
+                    </ul>
+                    <span class="btnleft"></span>
+                    <span class="btnright"></span>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--科学技术-->
+            <div class="publicProductDetail">
+                <!--轮播区域-->
+                <div class="pptbox exclusiveBanner">
+                    <ul class="innerwrapper">
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book6.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book3.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book4.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="controls">
+                        <li class="current"></li>
+                        <li></li>
+                    </ul>
+                    <span class="btnleft"></span>
+                    <span class="btnright"></span>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--儿童文学-->
+            <div class="publicProductDetail">
+                <!--轮播区域-->
+                <div class="pptbox exclusiveBanner">
+                    <ul class="innerwrapper">
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bannerContent">
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                                <div class="fl box200">
+                                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="controls">
+                        <li class="current"></li>
+                        <li></li>
+                    </ul>
+                    <span class="btnleft"></span>
+                    <span class="btnright"></span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--独家提供结束-->
+    <div class="clear"></div>
+    <!--猜你喜欢开始-->
+    <div class="box1200 marginTop40 paddingBottom10 borderBottom" id="guessULike">
+        <!--标题-->
+        <div class="publicTitle" id="guessULikeTitle">
+            <p class="titleTextBg">猜</p><span class="font22 textIndex marginLeft5">你喜欢</span>
+            <p class="fr font20 icon change">换一批</p>
+        </div>
+        <!--内容-->
+        <div id="guessULikeList">
+            <!--第一批-->
+            <div class="guessULikeContent" style="display: block">
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book5.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!--第二批-->
+            <div class="guessULikeContent">
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book2.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!--第三批-->
+            <div class="guessULikeContent">
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="fl box200">
+                    <p class="center"><a href="#"><img src="images/demo-book1.jpg" alt="书"></a></p>
+                    <p class="textIndex marginTop5"><a href="#">查理 斯密斯</a></p>
+                    <p class="textIndex marginTop5 colorGray">中国邮电出版社</p>
+                    <p class="textIndex marginTop5 font16"><span class="colorOrange">&yen;49</span>&emsp;<span class="fontGray fontDel">&yen;79</span></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!--猜你喜欢结束-->
+    <!--精选开始-->
+    <div class="box1200 marginTop40" id="choiceness">
+        <div class="choicenessDetail">
+            <p class="fr"><img src="images/demo-book7.jpg" alt=""></p>
+            <p class="font16">人文社科精选</p>
+            <p class="colorGray">书好价优</p>
+            <p class="redBg font12 center marginTop5">满3件折上7折</p>
+        </div>
+        <div class="choicenessDetail">
+            <p class="fr"><img src="images/demo-book7.jpg" alt=""></p>
+            <p class="font16">人文社科精选</p>
+            <p class="colorGray">书好价优</p>
+            <p class="redBg font12 center marginTop5">满3件折上7折</p>
+        </div>
+        <div class="choicenessDetail">
+            <p class="fr"><img src="images/demo-book7.jpg" alt=""></p>
+            <p class="font16">人文社科精选</p>
+            <p class="colorGray">书好价优</p>
+            <p class="redBg font12 center marginTop5">满3件折上7折</p>
+        </div>
+        <div class="choicenessDetail">
+            <p class="fr"><img src="images/demo-book7.jpg" alt=""></p>
+            <p class="font16">人文社科精选</p>
+            <p class="colorGray">书好价优</p>
+            <p class="redBg font12 center marginTop5">满3件折上7折</p>
+        </div>
+        <div class="choicenessDetail">
+            <p class="fr"><img src="images/demo-book7.jpg" alt=""></p>
+            <p class="font16">人文社科精选</p>
+            <p class="colorGray">书好价优</p>
+            <p class="redBg font12 center marginTop5">满3件折上7折</p>
+        </div>
+        <div class="choicenessDetail">
+            <p class="fr"><img src="images/demo-book7.jpg" alt=""></p>
+            <p class="font16">人文社科精选</p>
+            <p class="colorGray">书好价优</p>
+            <p class="redBg font12 center marginTop5">满3件折上7折</p>
+        </div>
+    </div>
+    <!--精选结束-->
+    <div class="clear"></div>
+    <!--广告开始-->
+    <div class="box1200 advertisement marginTop20"><img src="images/advertisement.png" alt="广告"></div>
+    <!--广告结束-->
+    <div class="clear"></div>
+    <!--脚部开始-->
+    <footer>
+        <div class="center marginTop40" id="serverList">
+            <img src="images/222_11.png" alt="正规渠道">
+            <img src="images/222_13.png" alt="放心购物">
+            <img src="images/222_15.png" alt="次日到达">
+            <img src="images/222_17.png" alt="上门退货">
+        </div>
+        <div class="box1200 marginTop35" id="footerContent">
+            <div class="goTop"><img src="images/gototop_05.jpg" alt=""></div>
+            <div id="serverMenu">
+                <ul>
+                    <li><p class="font16">购物指南</p></li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">发票制度</a></li>
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">会员优惠</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">支付方式</p></li>
+                    <li><a href="#">货到付款</a></li>
+                    <li><a href="#">网上支付</a></li>
+                    <li><a href="#">礼品卡支付</a></li>
+                    <li><a href="#">银行转账</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">订单服务</p></li>
+                    <li><a href="#">订单配送查询</a></li>
+                    <li><a href="#">订单状态说明</a></li>
+                    <li><a href="#">自动取消订单</a></li>
+                    <li><a href="#">自助修改订单</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">退换货</p></li>
+                    <li><a href="#">退换货政策</a></li>
+                    <li><a href="#">自助申请退换货</a></li>
+                    <li><a href="#">退换货进度查询</a></li>
+                    <li><a href="#">退款方式和时间</a></li>
+                </ul>
+                <ul>
+                    <li><p class="font16">上架服务</p></li>
+                    <li><a href="#">商家中心</a></li>
+                    <li><a href="#">运营服务</a></li>
+                    <li><a href="#">加入尾品会</a></li>
+                </ul>
+            </div>
+            <!--返回顶部-->
+            <div class="fr" id="footerLogo">
+                <img src="images/logo_00.png" alt="">
+            </div>
+            <div class="clear"></div>
+            <div class="marginTop35" id="copyright">
+                <ul>
+                    <li>&emsp;<a href="#">公司简介</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">Investor Relations</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">网站联盟</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">乐购招商</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">机构销售</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">手机乐购</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">官方logo</a>&emsp;|</li>
+                    <li>&emsp;<a href="#">热词搜索</a>&emsp;</li>
+                </ul>
+                <div class="clear"></div>
+                <p class="center font12 colorGray marginTop17">Copyright (C) 乐购网 2014-2016, All Rights Reserved</p>
+            </div>
+        </div>
+        <!--右侧二维码开始-->
+        <ul class="qrCode">
+            <li class="icon i1"></li>
+            <a href="vipCenter.html"><li class="li2"><p class="icon i2"></p><p class="icon code"></p></li></a>
+            <a href="shoppingCart.html"><li class="icon i3"><p class="publicCartNum center">3</p></li></a>
+        </ul>
+        <!--右侧二维码结束-->
+    </footer>
+    <!--脚部结束-->
+    <!--顶部锁定位置搜索-->
+    <div class="autoBox" id="topSearchFix">
+        <div class="box800 paddingTop7">
+            <div class="fl" id="searchLogo">
+                <img src="images/logo_white.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="scripts/afterEffects.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="scripts/footer.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>

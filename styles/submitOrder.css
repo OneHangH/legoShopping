@@ -1,0 +1,136 @@
+/*订单信息*/
+#orderInfo{
+    color: #666;
+}
+
+#orderInfo .infoTitle{
+    height: 60px;
+    background-color: #F2F2F2;
+    padding: 0px 20px;
+    line-height: 60px;
+}
+
+#orderInfo .infoCont,#orderInfo #inventory .invoice{
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#orderInfo .infoCont .choose{
+    width: 124px;
+    height: 30px;
+    display: inline-block;
+    border: solid 2px #E6E6E6;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#orderInfo .infoCont .current{
+     background-image: url(../images/icon_shop.png);
+     background-position: -240px -483px;
+     border: 2px solid #FF6700;
+ }
+
+#orderInfo .infoCont .default{
+    width: 120px;
+    height: 30px;
+    display: inline-block;
+    background-color: #999;
+    color: #fff;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+/*送货清单*/
+
+#orderInfo #inventory .infoCont .infoContText{
+    width: 425px;
+    padding: 30px 20px 0px 0px;
+}
+
+#orderInfo #inventory .infoCont .inventoryList{
+    width: 715px;
+    min-height: 240px;
+    margin-top: 10px;
+    padding: 10px 0px 0px 20px;
+    background-color: #F2F2F2;
+}
+
+#orderInfo #inventory .infoCont .inventoryList li{
+    height: 110px;
+    float: left;
+    line-height: 110px;
+    text-align: center;
+}
+
+#orderInfo #inventory .infoCont .inventoryList .proImg{
+    width: 108px;
+    height: 108px;
+    border: 1px solid #E6E6E6;
+    background-color: #fff;
+}
+
+#orderInfo #inventory .infoCont .inventoryList .proImg img{
+    height: 100px;
+}
+
+#orderInfo #inventory .infoCont .inventoryList .proName{
+    width: 230px;
+}
+
+#orderInfo #inventory .infoCont .inventoryList .proPrice{
+    width: 150px;
+}
+
+#orderInfo #inventory .infoCont .inventoryList .proNum{
+    width: 40px;
+}
+
+#orderInfo #inventory .infoCont .inventoryList .proState{
+    width: 180px;
+}
+
+#orderInfo #inventory .invoice{
+    border-top: solid 2px #E6E6E6;
+}
+
+/*结算*/
+#closeAccount #statistics,#closeAccount #submitInfo{
+    height: 60px;
+    padding-left: 20px;
+    line-height: 60px
+}
+
+#closeAccount #statistics{
+    border: 1px solid #ccc;
+}
+
+.width150{
+    width: 150px;
+}
+
+.width230{
+    width: 230px;
+}
+
+.width245{
+    width: 245px;
+}
+
+#closeAccount #submitInfo #submitOrder{
+    height: 60px;
+    width: 140px;
+    background-color: #FF6700;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+ }
+
+#closeAccount #submitInfo #sendAddress{
+    width: 345px;
+}
+
+#closeAccount #submitInfo input[type="text"]{
+    text-indent: 5px;
+    border: 1px solid #D9D9D9;
+}
