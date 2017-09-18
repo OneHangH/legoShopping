@@ -1,2 +1,2 @@
 # legoShopping
-<a>http://htmlpreview.github.com/?https://github.com/OneHangH/slider_OneHang/blob/master/index.htmlhttps://github.com/OneHangH/legoShopping/blob/master/index.html</a>
+<a>http://htmlpreview.github.io/?https://github.com/OneHangH/legoShopping/blob/master/index.html</a>
